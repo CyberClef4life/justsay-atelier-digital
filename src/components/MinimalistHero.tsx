@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 
 const MinimalistHero = () => {
-  const titleRef = useRef<HTMLHeadingElement>(null);
-  const subtitleRef = useRef<HTMLParagraphElement>(null);
+  const titleRef = useRef(null);
+  const subtitleRef = useRef(null);
 
   useEffect(() => {
     const title = titleRef.current;
@@ -22,20 +22,26 @@ const MinimalistHero = () => {
     }
   }, []);
 
+  // The unique ID of your YouTube video
+  const videoId = '_z-26j2nO48';
+
+  // Construct the YouTube embed URL with the correct parameters
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0`;
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline // Important for autoplay on mobile browsers
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        {/* IMPORTANT: Replace this with the actual path to your video file */}
-        <source src="/path/to/your/video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* YouTube Iframe Background */}
+      <div className="absolute top-0 left-0 w-full h-full z-0">
+        <iframe
+          className="absolute top-1/2 left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2"
+          style={{ width: '177.77vh', height: '100vw' }} // Scales the video to cover the screen
+          src={embedUrl}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
       
       {/* Content Overlay */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-8">
@@ -55,7 +61,7 @@ const MinimalistHero = () => {
         </p>
       </div>
 
-      {/* Scroll indicator - adjusted for better visibility on video */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10">
         <div className="w-px h-16 bg-gray-400 relative">
           <div className="absolute top-0 w-px h-4 bg-white animate-pulse"></div>
