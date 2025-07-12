@@ -1,4 +1,22 @@
 const MinimalistFooter = () => {
+  const InstagramIcon = () => (
+    <svg 
+      height="24px" 
+      width="24px" 
+      viewBox="0 0 24 24" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+  );
+
   return (
     <footer style={{ backgroundColor: '#111', color: '#eee', fontFamily: 'sans-serif' }}>
       <div style={{ 
@@ -150,18 +168,44 @@ const MinimalistFooter = () => {
           }}>
             Social
           </h3>
-          <a 
-            href="https://instagram.com/say.model"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ 
-              color: '#ccc', 
-              textDecoration: 'none',
-              fontSize: '14px'
-            }}
-          >
-            Instagram
-          </a>
+          <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+            <a 
+              href="https://instagram.com/say.model"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Say Model on Instagram"
+              style={{ color: '#ccc', textDecoration: 'none' }}
+            >
+              <InstagramIcon />
+            </a>
+            <a 
+              href="https://www.instagram.com/say.skinn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Say Skinn on Instagram"
+              style={{ color: '#ccc', textDecoration: 'none' }}
+            >
+              <InstagramIcon />
+            </a>
+            <a 
+              href="https://www.instagram.com/justceyg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Just Cey G on Instagram"
+              style={{ color: '#ccc', textDecoration: 'none' }}
+            >
+              <InstagramIcon />
+            </a>
+            <a 
+              href="https://www.instagram.com/justceybeauty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Just Cey Beauty on Instagram"
+              style={{ color: '#ccc', textDecoration: 'none' }}
+            >
+              <InstagramIcon />
+            </a>
+          </div>
         </div>
       </div>
 
