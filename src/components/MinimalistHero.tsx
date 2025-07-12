@@ -23,7 +23,7 @@ const MinimalistHero = () => {
   }, []);
 
   // The unique ID of your YouTube video
-  const videoId = '_z-26j2nO48';
+  const videoId = '9LDXLAKMrtA';
 
   // Construct the YouTube embed URL with the correct parameters
   const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0`;
