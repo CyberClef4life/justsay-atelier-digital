@@ -7,11 +7,11 @@
 @layer base {
   :root {
     /* Luxury Color Palette */
-    --background: 38 17% 98%; /* Ivory White #FAF9F6 */
-    --foreground: 0 0% 7%; /* Onyx Black #111111 */
+    --background: 0 0% 0%; /* Black */
+    --foreground: 0 0% 98%; /* White */
 
-    --card: 38 17% 98%;
-    --card-foreground: 0 0% 7%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 98%;
 
     --popover: 38 17% 98%;
     --popover-foreground: 0 0% 7%;
