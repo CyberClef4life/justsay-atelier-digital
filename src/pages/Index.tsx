@@ -1,23 +1,23 @@
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import PortfolioSection from "@/components/PortfolioSection";
-import ServicesSection from "@/components/ServicesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import ParallaxBackground from "@/components/ParallaxBackground";
+import MinimalistNavigation from "@/components/MinimalistNavigation";
+import MinimalistHero from "@/components/MinimalistHero";
+import MinimalistPortfolio from "@/components/MinimalistPortfolio";
+import MinimalistAbout from "@/components/MinimalistAbout";
+import MinimalistContact from "@/components/MinimalistContact";
+import MinimalistFooter from "@/components/MinimalistFooter";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <PortfolioSection />
-      <ServicesSection />
-      <TestimonialsSection />
-      <ContactSection />
-      <Footer />
+    <div className="min-h-screen bg-white relative">
+      <ParallaxBackground />
+      <div className="relative z-10">
+        <MinimalistNavigation />
+        <MinimalistHero />
+        <MinimalistPortfolio />
+        <MinimalistAbout />
+        <MinimalistContact />
+        <MinimalistFooter />
+      </div>
     </div>
   );
 };
