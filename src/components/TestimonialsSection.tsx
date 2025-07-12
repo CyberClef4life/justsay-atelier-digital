@@ -4,22 +4,22 @@ import { Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      quote: "JustSay possesses that rare combination of professional excellence and authentic warmth. Her presence transformed our entire campaign narrative.",
-      author: "Creative Director",
-      company: "Premier Luxury Brand",
-      role: "Global Campaign"
+      quote: "JustSay possesses that rare magnetism that transforms every frame into art. Her ethereal beauty and professional grace make her our go-to muse for luxury campaigns.",
+      author: "Valentina Romano",
+      company: "Maison Lumière",
+      role: "Fashion Director"
     },
     {
-      quote: "Working with JustSay elevated our brand storytelling to new heights. Her intuitive understanding of luxury aesthetics is extraordinary.",
-      author: "Fashion Editor",
-      company: "International Magazine",
-      role: "Editorial Collaboration"
+      quote: "She doesn't just model our designs—she breathes life into them. JustSay's intuitive understanding of fashion and natural elegance are simply breathtaking.",
+      author: "Christopher Blake",
+      company: "Atelier Noir",
+      role: "Creative Director"
     },
     {
-      quote: "JustSay brings an effortless elegance that resonates with our discerning clientele. A true professional and genuine artist.",
-      author: "Brand Manager",
-      company: "Couture House",
-      role: "Runway Partnership"
+      quote: "In twenty years of fashion photography, I've rarely encountered such natural poise and captivating presence. JustSay is a true artist's dream.",
+      author: "Amélie Dubois",
+      company: "Vogue International",
+      role: "Senior Fashion Editor"
     }
   ];
 
@@ -29,11 +29,10 @@ const TestimonialsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Voices of Distinction
+            Industry Acclaim
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover what industry leaders say about collaborating with JustSay—where 
-            every partnership becomes a celebrated success story.
+            Celebrated by fashion's finest—discover why JustSay is the muse of choice for luxury brands worldwide.
           </p>
         </div>
 
@@ -79,7 +78,7 @@ const TestimonialsSection = () => {
             className="text-lg px-8 py-4 h-auto"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Request VIP References
+            Connect with JustSay
           </Button>
         </div>
       </div>

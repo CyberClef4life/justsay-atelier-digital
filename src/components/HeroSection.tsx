@@ -17,12 +17,12 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 animate-fade-in">
-          Where Vision 
-          <span className="block text-primary font-serif italic">Becomes Legend</span>
+          Where Beauty 
+          <span className="block text-primary font-serif italic">Meets Artistry</span>
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-slide-in">
-          Experience the rare elegance of JustSay in every frame.
+          Discover the captivating grace and timeless elegance of JustSay - your next muse.
         </p>
 
         {/* CTA Buttons */}
@@ -33,7 +33,7 @@ const HeroSection = () => {
             className="text-lg px-8 py-4 h-auto"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Begin Your Journey
+            Book JustSay
           </Button>
           
           <Button 
@@ -42,7 +42,7 @@ const HeroSection = () => {
             className="text-lg px-8 py-4 h-auto"
             onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Request Exclusive Preview
+            View Portfolio
           </Button>
         </div>
       </div>

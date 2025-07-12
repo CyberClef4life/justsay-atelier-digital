@@ -5,23 +5,23 @@ const ServicesSection = () => {
   const services = [
     {
       icon: Camera,
-      title: "Runway Excellence",
-      description: "High-fashion shows, designer collections, and couture presentations with commanding presence and professional grace."
+      title: "Fashion Editorial",
+      description: "Haute couture editorials and luxury fashion campaigns that breathe life into designer visions with ethereal grace."
     },
     {
       icon: Palette,
-      title: "Editorial Sophistication",
-      description: "Magazine shoots, luxury brand editorials, and artistic collaborations that capture authentic elegance."
+      title: "Beauty & Cosmetics",
+      description: "Radiant beauty campaigns showcasing makeup, skincare, and fragrance with captivating allure and sophistication."
     },
     {
       icon: Sparkles,
-      title: "Beauty & Lifestyle",
-      description: "Cosmetics campaigns, luxury lifestyle imagery, and brand storytelling with genuine warmth and allure."
+      title: "Runway Modeling",
+      description: "Commanding presence on international runways for fashion weeks and designer showcases worldwide."
     },
     {
       icon: Monitor,
-      title: "Digital Excellence",
-      description: "Social media campaigns, digital marketing content, and influencer collaborations with premium engagement."
+      title: "Luxury Campaigns",
+      description: "Premium brand ambassadorships and high-end commercial work for discerning fashion and lifestyle clients."
     }
   ];
 
@@ -31,11 +31,11 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Crafting Bespoke Campaigns
+            Signature Modeling Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Every collaboration is tailored to create extraordinary moments that resonate with luxury audiences 
-            and elevate brand narratives to new heights.
+            From intimate beauty shoots to grand fashion spectacles, JustSay brings unparalleled artistry 
+            and magnetic presence to every collaboration.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ const ServicesSection = () => {
             className="text-lg px-8 py-4 h-auto"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Envision Your Campaign
+            Book Your Muse
           </Button>
         </div>
       </div>

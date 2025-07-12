@@ -3,10 +3,10 @@ import { CheckCircle, Star, Globe, Users } from "lucide-react";
 
 const AboutSection = () => {
   const achievements = [
-    { icon: Star, text: "Featured on International Vogue Covers" },
-    { icon: Globe, text: "Global Campaigns with Luxury Brands" },
-    { icon: Users, text: "1M+ Engaged Social Following" },
-    { icon: CheckCircle, text: "Exclusive Couture Runway Experience" }
+    { icon: Star, text: "Featured in International Fashion Magazines" },
+    { icon: Globe, text: "Luxury Brand Ambassador & Campaigns" },
+    { icon: Users, text: "1M+ Fashion-Forward Followers" },
+    { icon: CheckCircle, text: "Haute Couture Runway Specialist" }
   ];
 
   return (
@@ -15,20 +15,19 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Header */}
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-8">
-            An Icon in the Making
+            A Muse Beyond Compare
           </h2>
 
           {/* Introduction */}
           <div className="space-y-6 mb-12">
             <p className="text-xl md:text-2xl text-foreground leading-relaxed font-light">
-              Meet JustSay—an icon in the making whose authentic grace and commanding presence 
-              transform every campaign into a masterpiece.
+              Meet JustSay—a model whose ethereal beauty and magnetic presence transform every lens into poetry, 
+              every campaign into art.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              From the most prestigious runways of Paris to the intimate studios of renowned photographers, 
-              JustSay embodies the perfect fusion of professional excellence and genuine warmth that today's 
-              luxury brands seek to capture.
+              From haute couture catwalks to luxury brand campaigns, she embodies the perfect fusion of elegance, 
+              sensuality, and sophistication that fashion's elite seek for their most prestigious projects.
             </p>
           </div>
 
@@ -55,7 +54,7 @@ const AboutSection = () => {
               className="text-lg px-8 py-4 h-auto"
               onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Discover Her Story
+              Discover the Muse
             </Button>
           </div>
         </div>

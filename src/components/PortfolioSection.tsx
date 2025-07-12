@@ -52,11 +52,11 @@ const PortfolioSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-            A Portfolio of Distinction
+            Portfolio Elegance
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Step into an atelier of moments, where each image captures an invitation to luxury. 
-            Discover the artistry that defines JustSay's extraordinary journey.
+            A curated collection showcasing JustSay's versatility—from haute couture to beauty campaigns, 
+            each frame tells a story of timeless elegance and magnetic allure.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ const PortfolioSection = () => {
             className="text-lg px-8 py-4 h-auto"
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            Explore the Collection
+            Request Full Portfolio
           </Button>
         </div>
       </div>

@@ -8,12 +8,12 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Section Header */}
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Elevate Your Vision
+            Your Next Muse Awaits
           </h2>
           
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            JustSay is available for exclusive partnerships and bespoke collaborations. 
-            Let's create your next icon together and craft moments that define luxury.
+            Ready to create something extraordinary? JustSay is available for luxury campaigns, 
+            editorial shoots, and exclusive brand partnerships that define elegance.
           </p>
 
           {/* Contact Options */}
@@ -22,9 +22,9 @@ const ContactSection = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4">
                 <Mail className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="font-semibold text-foreground mb-2">Exclusive Collaborations</h3>
+              <h3 className="font-semibold text-foreground mb-2">Booking & Representation</h3>
               <p className="text-muted-foreground text-sm">
-                High-end campaigns and luxury partnerships
+                Fashion campaigns, editorial shoots, and brand collaborations
               </p>
             </div>
 
@@ -32,9 +32,9 @@ const ContactSection = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4">
                 <Phone className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="font-semibold text-foreground mb-2">Priority Booking</h3>
+              <h3 className="font-semibold text-foreground mb-2">Agency Direct Line</h3>
               <p className="text-muted-foreground text-sm">
-                Direct access for time-sensitive projects
+                Priority response for casting directors and fashion agencies
               </p>
             </div>
 
@@ -42,9 +42,9 @@ const ContactSection = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-gold rounded-full mb-4">
                 <MapPin className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="font-semibold text-foreground mb-2">Global Availability</h3>
+              <h3 className="font-semibold text-foreground mb-2">International Shoots</h3>
               <p className="text-muted-foreground text-sm">
-                International shoots and fashion weeks
+                Available for fashion weeks, luxury campaigns, and editorial shoots worldwide
               </p>
             </div>
           </div>
@@ -55,9 +55,9 @@ const ContactSection = () => {
               variant="luxury" 
               size="lg"
               className="text-xl px-12 py-6 h-auto"
-              onClick={() => window.location.href = 'mailto:concierge@saymodel.com?subject=Exclusive Collaboration Inquiry'}
+              onClick={() => window.location.href = 'mailto:concierge@saymodel.com?subject=Modeling Inquiry for JustSay'}
             >
-              Initiate Collaboration
+              Book JustSay Now
             </Button>
             
             {/* Fallback Contact */}
@@ -76,9 +76,9 @@ const ContactSection = () => {
           {/* Additional Info */}
           <div className="mt-12 p-6 bg-background/50 rounded-lg border border-border">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">Booking Notice:</strong> Premium partnerships require 
-              advance scheduling. For urgent requests, priority booking is available for established luxury brands. 
-              All inquiries are handled with the utmost discretion and professionalism.
+              <strong className="text-foreground">Modeling Schedule:</strong> JustSay accepts bookings 2-4 weeks in advance for optimal preparation. 
+              Priority scheduling available for established fashion houses and luxury brands. 
+              All inquiries are handled with complete discretion and professionalism.
             </p>
           </div>
         </div>
