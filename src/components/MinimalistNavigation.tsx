@@ -20,7 +20,7 @@ const MinimalistNavigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="font-light text-2xl tracking-wider text-gray-900">
-            JUSTSAY
+            SAYMODEL
           </div>
 
           {/* Minimal Menu */}
@@ -30,6 +30,14 @@ const MinimalistNavigation = () => {
             </a>
             <a href="#about" className="text-sm font-light tracking-wide text-gray-700 hover:text-gray-900 transition-colors duration-300">
               ABOUT
+            </a>
+            <a 
+              href="https://say.com.co/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm font-light tracking-wide text-gray-700 hover:text-gray-900 transition-colors duration-300"
+            >
+              SKIN CARE
             </a>
             <a href="#contact" className="text-sm font-light tracking-wide text-gray-700 hover:text-gray-900 transition-colors duration-300">
               CONTACT

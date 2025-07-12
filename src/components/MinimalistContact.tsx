@@ -52,18 +52,23 @@ const MinimalistContact = () => {
               <div className="text-center">
                 <h3 className="text-sm font-light tracking-widest text-gray-500 mb-4">EMAIL</h3>
                 <a 
-                  href="mailto:concierge@saymodel.com"
+                  href="mailto:say@saymodel.com"
                   className="text-base font-light text-gray-900 hover:text-gray-600 transition-colors duration-300"
                 >
-                  concierge@saymodel.com
+                  say@saymodel.com
                 </a>
               </div>
 
               <div className="text-center">
-                <h3 className="text-sm font-light tracking-widest text-gray-500 mb-4">REPRESENTATION</h3>
-                <p className="text-base font-light text-gray-900">
-                  Elite Model Management
-                </p>
+                <h3 className="text-sm font-light tracking-widest text-gray-500 mb-4">WHATSAPP</h3>
+                <a 
+                  href="https://wa.me/971585812278"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-light text-gray-900 hover:text-gray-600 transition-colors duration-300"
+                >
+                  +971-5858-1-2278
+                </a>
               </div>
 
               <div className="text-center">
@@ -78,10 +83,10 @@ const MinimalistContact = () => {
           {/* CTA Button */}
           <div className="fade-in-element opacity-0 transform translate-y-8 transition-all duration-1000">
             <a 
-              href="mailto:concierge@saymodel.com?subject=Modeling Inquiry for JustSay"
+              href="mailto:say@saymodel.com?subject=Modeling Inquiry for SAYMODEL"
               className="inline-block text-sm font-light tracking-widest text-gray-900 border border-gray-900 px-12 py-4 hover:bg-gray-900 hover:text-white transition-all duration-300"
             >
-              BOOK JUSTSAY
+              BOOK SAYMODEL
             </a>
           </div>
         </div>

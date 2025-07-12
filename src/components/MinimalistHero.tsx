@@ -30,14 +30,14 @@ const MinimalistHero = () => {
           className="font-light text-6xl md:text-8xl lg:text-9xl tracking-wider text-gray-900 mb-8 opacity-0 transform translate-y-8 transition-all duration-1000"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
-          JUSTSAY
+          SAYMODEL
         </h1>
         
         <p 
           ref={subtitleRef}
           className="font-light text-lg md:text-xl tracking-widest text-gray-600 opacity-0 transform translate-y-4 transition-all duration-1000"
         >
-          MODEL • MUSE • VISIONARY
+          MODEL • HOST • AMBASSADOR
         </p>
       </div>
 

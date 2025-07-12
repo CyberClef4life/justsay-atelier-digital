@@ -5,6 +5,7 @@ import MinimalistPortfolio from "@/components/MinimalistPortfolio";
 import MinimalistAbout from "@/components/MinimalistAbout";
 import MinimalistContact from "@/components/MinimalistContact";
 import MinimalistFooter from "@/components/MinimalistFooter";
+import FloatingButtons from "@/components/FloatingButtons";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <MinimalistAbout />
         <MinimalistContact />
         <MinimalistFooter />
+        <FloatingButtons />
       </div>
     </div>
   );
