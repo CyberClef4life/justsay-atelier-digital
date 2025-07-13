@@ -54,7 +54,7 @@ const MinimalistAbout = () => {
 
             <div className="fade-in-element opacity-0 transform translate-y-8 transition-all duration-1000">
               <p className="text-lg font-light leading-relaxed text-gray-700 mb-8">
-                A vision of ethereal beauty and magnetic presence, JustSay transforms every lens into poetry, every campaign into art.
+                A vision of ethereal beauty and magnetic presence, JUSTSAY transforms every lens into poetry, every campaign into art.
               </p>
               
               <p className="text-base font-light leading-relaxed text-gray-600 mb-12">

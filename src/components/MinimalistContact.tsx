@@ -83,10 +83,10 @@ const MinimalistContact = () => {
           {/* CTA Button */}
           <div className="fade-in-element opacity-0 transform translate-y-8 transition-all duration-1000">
             <a 
-              href="mailto:say@saymodel.com?subject=Modeling Inquiry for SAYMODEL"
+              href="/booking"
               className="inline-block text-sm font-light tracking-widest text-gray-900 border border-gray-900 px-12 py-4 hover:bg-gray-900 hover:text-white transition-all duration-300"
             >
-              BOOK SAYMODEL
+              BOOK JUSTSAY
             </a>
           </div>
         </div>

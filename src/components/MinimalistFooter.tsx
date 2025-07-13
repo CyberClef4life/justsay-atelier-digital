@@ -50,7 +50,7 @@ const MinimalistFooter = () => {
                 textDecoration: 'none' 
               }}
             >
-              Say
+              JUSTSAY
             </a>
           </h2>
           <p style={{ 
@@ -58,7 +58,7 @@ const MinimalistFooter = () => {
             color: '#ccc', 
             margin: '0' 
           }}>
-            Model | Host | Ambassador
+            Model | Makeup Artist | Muse
           </p>
         </div>
 
