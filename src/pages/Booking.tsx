@@ -82,6 +82,7 @@ Please respond with availability and detailed quote.
     `.trim();
 
     const mailtoLink = `mailto:say@saymodel.com?subject=Booking Request - ${selectedServiceNames}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:say@vip.tov.ae?subject=Booking Request - ${selectedServiceNames}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
   };
 

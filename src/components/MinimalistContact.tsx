@@ -52,10 +52,10 @@ const MinimalistContact = () => {
               <div className="text-center">
                 <h3 className="text-sm font-light tracking-widest text-gray-500 mb-4">EMAIL</h3>
                 <a 
-                  href="mailto:say@saymodel.com"
+                  href="mailto:say@vip.tov.ae"
                   className="text-base font-light text-gray-900 hover:text-gray-600 transition-colors duration-300"
                 >
-                  say@saymodel.com
+                  say@vip.tov.ae
                 </a>
               </div>
 

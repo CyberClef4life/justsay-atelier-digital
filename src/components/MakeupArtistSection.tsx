@@ -1,7 +1,16 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const MakeupArtistSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const carouselImages = [
+    'https://vip.tov.ae/images/saymodel/justceybeauty-1.jpg',
+    'https://vip.tov.ae/images/saymodel/justceybeauty-4.jpg',
+    'https://vip.tov.ae/images/saymodel/justceybeauty-5.jpg',
+    'https://vip.tov.ae/images/saymodel/justceybeauty-6.jpg'
+  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -46,6 +55,18 @@ const MakeupArtistSection = () => {
     }
   ];
 
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
   return (
     <section id="makeup" ref={sectionRef} className="py-32 px-8 bg-gray-50">
       <div className="max-w-6xl mx-auto">
@@ -83,16 +104,81 @@ const MakeupArtistSection = () => {
                 ))}
               </div>
             </div>
+
+            {/* Book Now Button */}
+            <div className="fade-in-element opacity-0 transform translate-y-8 transition-all duration-1000">
+              <a 
+                href="mailto:say@vip.tov.ae?subject=Makeup Artist Booking Inquiry"
+                className="inline-block text-sm font-light tracking-widest text-gray-900 border border-gray-900 px-12 py-4 hover:bg-gray-900 hover:text-white transition-all duration-300"
+              >
+                BOOK NOW
+              </a>
+            </div>
           </div>
 
-          {/* Right Column - Image */}
+          {/* Right Column - Luxury Carousel */}
           <div className="fade-in-element opacity-0 transform translate-y-8 transition-all duration-1000">
-            <div className="aspect-[3/4] bg-gray-100 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-200"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-gray-400 font-light tracking-widest text-sm">
-                  MAKEUP ARTISTRY
-                </div>
+            <div className="relative aspect-[3/4] bg-gray-100 overflow-hidden group">
+              {/* Carousel Images */}
+              <div className="relative w-full h-full">
+                {carouselImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`absolute inset-0 transition-all duration-700 ease-in-out ${
+                      index === currentSlide 
+                        ? 'opacity-100 transform scale-100' 
+                        : 'opacity-0 transform scale-105'
+                    }`}
+                  >
+                    <img
+                      src={image}
+                      alt={`JUSTSAY Makeup Artistry ${index + 1}`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+                
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm border border-gray-200 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110"
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="w-5 h-5 text-gray-900" />
+              </button>
+
+              <button
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 backdrop-blur-sm border border-gray-200 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white hover:scale-110"
+                aria-label="Next image"
+              >
+                <ChevronRight className="w-5 h-5 text-gray-900" />
+              </button>
+
+              {/* Dot Navigation */}
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
+                {carouselImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentSlide
+                        ? 'bg-white scale-125 shadow-lg'
+                        : 'bg-white/60 hover:bg-white/80'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              {/* Image Counter */}
+              <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 text-sm font-light tracking-wide">
+                {currentSlide + 1} / {carouselImages.length}
               </div>
             </div>
           </div>

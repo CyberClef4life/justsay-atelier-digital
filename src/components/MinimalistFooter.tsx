@@ -75,13 +75,13 @@ const MinimalistFooter = () => {
           <div style={{ fontSize: '14px' }}>
             <p style={{ margin: '0 0 8px 0' }}>
               <a 
-                href="mailto:hello@saymodel.com" 
+                href="mailto:say@vip.tov.ae" 
                 style={{ 
                   color: '#ccc', 
                   textDecoration: 'none' 
                 }}
               >
-                hello@saymodel.com
+                say@vip.tov.ae
               </a>
             </p>
             <p style={{ margin: '0' }}>
@@ -109,7 +109,7 @@ const MinimalistFooter = () => {
             Get Started
           </h3>
           <a 
-            href="https://saymodel.com/contact"
+            href="mailto:say@vip.tov.ae?subject=Talent Booking Request"
             style={{
               display: 'inline-block',
               backgroundColor: '#007bff',
