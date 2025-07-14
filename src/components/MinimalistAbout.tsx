@@ -34,12 +34,12 @@ const MinimalistAbout = () => {
           {/* Left Column - Image */}
           <div className="fade-in-element opacity-0 transform translate-y-8 transition-all duration-1000">
             <div className="aspect-[3/4] bg-gray-100 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-200"></div>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-gray-400 font-light tracking-widest text-sm">
-                  PORTRAIT
-                </div>
-              </div>
+              <img
+                src="https://vip.tov.ae/images/saymodel/saymodel-8.jpg"
+                alt="JUSTSAY Portrait"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
 

@@ -37,7 +37,9 @@ const MinimalistPortfolio = () => {
     'https://vip.tov.ae/images/saymodel/saymodel-7.jpg',
     'https://vip.tov.ae/images/saymodel/saymodel-8.jpg',
     'https://vip.tov.ae/images/saymodel/saymodel-9.jpg',
-    'https://vip.tov.ae/images/saymodel/saymodel-12.jpg'
+    'https://vip.tov.ae/images/saymodel/saymodel-12.jpg',
+    'https://vip.tov.ae/images/saymodel/justceybeauty-2.jpg',
+    'https://vip.tov.ae/images/saymodel/justceybeauty-3.jpg'
   ];
 
   const openModal = (imageSrc: string) => {
@@ -87,7 +89,12 @@ const MinimalistPortfolio = () => {
   // Create rows with distributed images
   const createRows = () => {
     const rows = [[], [], [], []] as string[][];
-    portfolioImages.forEach((img, index) => {
+    
+    // Create a shuffled copy of images to randomize display
+    const shuffledImages = [...portfolioImages].sort(() => Math.random() - 0.5);
+    
+    // Distribute shuffled images across rows
+    shuffledImages.forEach((img, index) => {
       rows[index % 4].push(img);
     });
     
@@ -95,7 +102,12 @@ const MinimalistPortfolio = () => {
     const totalSlotsPerRow = 7;
     rows.forEach(row => {
       while (row.length < totalSlotsPerRow) {
-        row.push(portfolioImages[Math.floor(Math.random() * portfolioImages.length)]);
+        // Use a different random image that's not the same as the last one in the row
+        let randomImg;
+        do {
+          randomImg = shuffledImages[Math.floor(Math.random() * shuffledImages.length)];
+        } while (row.length > 0 && randomImg === row[row.length - 1]);
+        row.push(randomImg);
       }
     });
     

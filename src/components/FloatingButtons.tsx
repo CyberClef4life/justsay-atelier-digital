@@ -3,7 +3,7 @@ const FloatingButtons = () => {
     <div className="fixed right-8 bottom-8 z-40 flex flex-col space-y-4">
       {/* Email Button */}
       <a
-        href="mailto:say@saymodel.com"
+        href="mailto:say@vip.tov.ae"
         className="group w-14 h-14 bg-white border border-gray-200 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
         title="Email us"
       >
